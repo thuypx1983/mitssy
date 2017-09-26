@@ -1,49 +1,18 @@
 
 #header-top{
-  background-color: $bg_1;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-}
-#header{
-  background-color: rgba(255, 255, 255, 0.6);
-  position: relative;
-  z-index: 9;
-  .pull-left{
-    position: absolute;
-    height: 100%;
-    #logo{
-      height: 100%;
-      display: block;
-      a{
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap; /* optional. only if you want the items to wrap */
-        justify-content: center; /* for horizontal alignment */
-        align-items: center; /* for vertical alignment */
-        img{
-          max-height: 100%;
-        }
+  background-color: $color1;
+  height: 56px;
+  i{
+    color: $color3;
+  }
+  .block-logo{
+    a{
+      display: inline-block;
+      position: relative;
+      width: 60%;
+      img{
+        margin-top: 6px;
       }
     }
-  }
-}
-
-@include bp(max-width,$bp-tablet){
-  #header{
-    background-color: rgba(255, 255, 255, 0.6);
-    position: relative;
-    z-index: 9;
-    .pull-left{
-      position: inherit;
-      float: none !important;
-      #logo{
-
-      }
-    }
-  }
-  #header-top{
-    height: 0px;
-    padding: 0px;
   }
 }

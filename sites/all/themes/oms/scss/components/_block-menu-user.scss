@@ -1,0 +1,34 @@
+.block-menu-user{
+  cursor: pointer;
+  position: relative;
+  border-right: 1px solid $color2;
+  height: 56px;
+  .fa{
+    line-height: 56px;
+  }
+  .content{
+    display: none;
+    border-bottom: 1px solid $color2;
+    padding: 10px;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: white;
+    position: absolute;
+    width: 258px;
+    z-index: 9999;
+    ul{
+      li{
+      padding: 10px;
+      }
+    }
+  }
+  &:hover{
+    .fa{
+      color: white;
+    }
+    .content{
+      display: block;
+    }
+  }
+}

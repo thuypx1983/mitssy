@@ -34,22 +34,11 @@
         //
         initSlick:function(){
 
-            $('.banner-home .view-banner .view-content').slick({
+            $('.main-slider .view-content').slick({
                 autoplay: true,
                 autoplaySpeed: 2000,
-                arrows: false,
-            })
-            $('.banner-second .view-banner .view-content').slick({
-                autoplay: true,
-                autoplaySpeed: 2000,
-                arrows: false
-            })
-            $('.related-products .view-content').slick({
-                infinite: true,
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
+                arrows: true,
+                dots:true
             })
         },
 
@@ -84,10 +73,9 @@
             })
         },
 
-        searchMobile:function () {
-            $('.search-icon').click(function(){
-                $('#block-search-form').addClass('open-popup');
-                $("#edit-search-block-form--2").focus();
+        searchClick:function () {
+            $('.block-search .title .fa.fa-search').click(function(){
+                $('.block-search .content').show();
             })
         },
         moveSlideBarToBottom:function () {
@@ -105,15 +93,21 @@
         }
     }
 
-
     $(document).ready(function(){
-        $('#block-search-form').prepend('<span class="btn-close">x</span>')
 
+
+        $(document).on("click",function (event) {
+            console.log($(event.target));
+            if (!$(event.target).is(".block-search .content .container-inline, #edit-search-block-form--2,.block-search .title .fa.fa-search")) {
+                $('.block-search .content').hide();
+
+            }
+        })
         STNScript.initSlick();
         STNScript.detectStar();
         STNScript.createMenuMobile();
-        STNScript.searchMobile();
-        
+        STNScript.searchClick();
+
         $(document).on("click",function (event) {
             if (!$(event.target).is("#block-search-form,.search-icon,.glyphicon-search,#edit-search-block-form--2")) {
                 $('#block-search-form').removeClass('open-popup');;

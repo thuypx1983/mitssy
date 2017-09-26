@@ -1,0 +1,10 @@
+.block-top-phone{
+  border-right: 1px solid $color2;
+  height: 56px;
+  .content{
+    color: $color3;
+    .fa{
+      line-height: 56px;
+    }
+  }
+}

@@ -37,6 +37,7 @@ function oms_process_html(&$vars) {
 function oms_preprocess_html(&$variables) {
 
   drupal_add_css('//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i', array('type' => 'external'));
+  drupal_add_css('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array('type' => 'external'));
   drupal_add_css('//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css', array('type' => 'external'));
   drupal_add_css('//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.min.css', array('type' => 'external'));
   drupal_add_js('//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js', array('type' => 'external'));
@@ -161,4 +162,20 @@ function oms_preprocess_node(&$variables) {
  */
 if (drupal_is_front_page()) {
   //drupal_add_js(drupal_get_path('theme', 'oms') . '/js/sliding_effect.js');
+}
+/**
+ * Themes the shopping cart icon.
+ *
+ * @param $variables
+ *   An associative array containing:
+ *   - icon_class: Class to use for the cart icon image, either cart-full or
+ *     cart-empty.
+ *
+ * @ingroup themeable
+ */
+function oms_uc_cart_block_title_icon($variables) {
+    //$icon_class = $variables['icon_class'];
+    $icon_class = 'fa fa-shopping-cart';
+
+    return l('<span class="' . $icon_class . '" title="' . t('View your shopping cart.') . '"></span>', 'cart', array('html' => TRUE));
 }
