@@ -1,3 +1,59 @@
 #navigation{
+  #main-menu{
+    ul{
+      z-index: 9999;
+      li{
+        padding: 0px;
+      }
+    }
+    &>ul{
+      display: table;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+      text-align: center;
+      &>li{
+        display: inline-block;
+        float: left;
+        color: $color5;
+        font-weight: 500;
+        position: relative;
+        a{
+          color: $color5;
+          display: inline-block;
+          font-weight: 500;
+          padding-bottom: 17px;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-top: 15px;
+          text-decoration-color: currentcolor;
+          text-decoration-line: none;
+          text-decoration-style: solid;
+        }
+        &:hover{
+          &>ul{
+            display: block;
 
+          }
+        }
+        &>ul{
+          background-color: $color6;
+          display: none;
+          width: 300px;
+          position: absolute;
+          top: 100%;
+          left: 0px;
+          &>li{
+            ul{
+              &.mega{
+                display: block;
+                float: left;
+                width: 33.3333%;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
 }

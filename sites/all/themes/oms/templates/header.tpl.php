@@ -29,7 +29,7 @@
 
           </div>
       </div>
-      <div class="pull-right hidden-sm hidden-xs">
+      <div class="hidden-sm hidden-xs">
         <nav id="navigation" class="clearfix" role="navigation">
           <div id="main-menu">
             <?php
