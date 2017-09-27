@@ -43,15 +43,18 @@
           top: 100%;
           left: 0px;
           &>li{
-            ul{
-              &.mega{
-                display: block;
-                float: left;
-                width: 33.3333%;
-              }
+
+          }
+        }
+        &.mega{
+          &>ul{
+            width: 400px;
+            &>li{
+              display: block;
+              float: left;
+              width: 33.3333%;
             }
           }
-
         }
       }
     }

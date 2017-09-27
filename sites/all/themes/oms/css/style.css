@@ -181,6 +181,17 @@ ul.menu {
   transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
   width: 100%; }
 
+.main-slider .slick-next {
+  right: 25px;
+  z-index: 10;
+  color: #dfdfdf; }
+.main-slider .slick-prev {
+  left: 25px;
+  z-index: 10; }
+.main-slider .slick-next:before, .main-slider .slick-prev:before {
+  color: #00beb4;
+  font-size: 25px; }
+
 #navigation #main-menu ul {
   z-index: 9999; }
   #navigation #main-menu ul li {
@@ -216,7 +227,9 @@ ul.menu {
       position: absolute;
       top: 100%;
       left: 0px; }
-      #navigation #main-menu > ul > li > ul > li ul.mega {
+    #navigation #main-menu > ul > li.mega > ul {
+      width: 400px; }
+      #navigation #main-menu > ul > li.mega > ul > li {
         display: block;
         float: left;
         width: 33.3333%; }
