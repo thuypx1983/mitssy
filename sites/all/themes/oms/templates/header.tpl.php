@@ -1,34 +1,14 @@
 
 <header >
   <div id="header-top">
-    <div class="container">
+    <div class="container container-top">
       <div class="row">
         <?php print render($page['header_top']); ?>
       </div>
     </div>
   </div>
   <div id="header">
-    <div class="container">
-
-      <div class="pull-left mobile-header">
-
-          <div class="mobile-menu hidden-lg hidden-md ">
-              <div class="hotline-mobile">
-                  <span><?php echo t('Hotline 123 456 789')?></span>
-              </div>
-              <div class="">
-                  <div class="menu-btn">
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                  </div>
-                  <div class="search-icon">
-                      <span class="glyphicon glyphicon-search"></span>
-                  </div>
-              </div>
-
-          </div>
-      </div>
+    <div class="container container-top">
       <div class="hidden-sm hidden-xs">
         <nav id="navigation" class="clearfix" role="navigation">
           <div id="main-menu">

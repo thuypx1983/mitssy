@@ -1,0 +1,76 @@
+.block-featured-product{
+  .title-line {
+
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    .title {
+      display: inline-block;
+      vertical-align: baseline;
+      zoom: 1;
+      *display: inline;
+      *vertical-align: auto;
+      position: relative;
+      padding: 0 10px;
+      font-weight: bold;
+
+      &:before, &:after {
+        content: '';
+        display: block;
+        width: 1000px;
+        position: absolute;
+        top: 0.73em;
+        border-top: 1px solid $color4;
+      }
+
+      &:before { right: 100%; }
+      &:after { left: 100%; }
+    }
+  }
+  .view-header{
+    margin-top: 10px;
+    margin-bottom: 35px;
+    p{
+      font-size: 20px;
+      font-weight: 400;
+      color: $color1;
+      text-align: center;
+      padding: 0px;
+    }
+  }
+  .views-row{
+
+    .views-field-title{
+      a{
+        text-transform: uppercase;
+        display: block;
+        text-align: left;
+        padding-top: 20px;
+        text-transform: lowercase;
+        &:first-letter {
+          text-transform: uppercase;
+        }
+      }
+    }
+    .views-field-sell-price{
+      padding-top: 20px;
+      .uc-price{
+        font-weight: bold;
+        color: $color1;
+      }
+
+    }
+    .views-field-uc-product-image{
+      img{
+        outline: none;
+      }
+    }
+  }
+  .slick-dots {
+    bottom: -50px;
+    li button::before{
+      font-size: 14px;
+    }
+  }
+  padding-bottom: 60px;
+}

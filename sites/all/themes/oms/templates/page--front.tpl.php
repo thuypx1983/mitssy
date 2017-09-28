@@ -74,43 +74,9 @@
       <div id="home-banner"> <?php print render($page['home_banner']); ?></div>
   <?php endif; ?>
 
-    <div id="home-highlights" class="clearfix">
-      <?php if ($page['home_high1']): ?>
-          <div class="home-highlight-box">
-              <div class="container home-highlight-box1"><?php print render($page['home_high1']); ?></div>
-          </div>
-      <?php endif; ?>
-      <?php if ($page['home_high2']): ?>
-          <div class="home-highlight-box">
-              <div class="container home-highlight-box2">
-                  <div class="row">
-                    <?php print render($page['home_high2']); ?>
-                  </div>
-              </div>
-          </div>
-      <?php endif; ?>
-        <div class="home-highlight-box">
-            <div class="container home-highlight-box3 technical remove-margin">
-                <div class="title">
-                    <span>Góc kỹ thuật</span>
-                </div>
-                <div class="row">
-                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
-                      <?php print render($page['home_high3_column1']); ?>
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
-                      <?php print render($page['home_high3_column2']); ?>
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
-                      <?php print render($page['home_high3_column3']); ?>
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
-                      <?php print render($page['home_high3_column4']); ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php if ($page['home_high1']): ?>
+        <?php print render($page['home_high1']); ?>
+    <?php endif; ?>
 
   <?php
   include(drupal_get_path('theme', 'oms').'/templates/footer.tpl.php');
