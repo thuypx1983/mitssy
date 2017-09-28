@@ -4,6 +4,7 @@
  *
  * Adds a Facebook like button to page nodes.
  */
+/*
 function product_extend_node_view($node, $view_mode, $langcode) {
     $node->content['social_buttons'] = array(
       '#type' => 'item',
@@ -42,13 +43,14 @@ function product_extend_node_view($node, $view_mode, $langcode) {
       default:
         break;
     }
-}
+}*/
 
 /**
  * Implements hook_field_extra_fields().
  *
  * Declare our Facebook Like button as a pseudo-field.
  */
+/*
 function product_extend_field_extra_fields() {
     $extra['node']['product']['display'] = array(
         'product_title' => array(
@@ -136,13 +138,14 @@ function product_extend_field_extra_fields() {
   );
 
     return $extra;
-}
+}*/
 
 
 /**
  * Implements hook_theme().
  */
-function product_extend_theme() {
+/*function product_extend_theme() {
+
   return array(
     'social_buttons' => array(
       'variables' => array(
@@ -151,4 +154,43 @@ function product_extend_theme() {
       'template' => 'templates/social-buttons',
     ),
   );
+}*/
+function product_extend_form_alter(&$form, &$form_state, $form_id){
+  //if it is the exposed filter view
+  if (($form_id == 'views_exposed_form') &&
+    //for the view we care about
+    ($form_state['view']->name == 'products_list') &&
+    //and the view display we care about
+    ($form_state['view']->current_display == 'page_1') &&
+    //and on a taxonomy term page
+    (arg(0)=='taxonomy') && (arg(1)=='term') && (is_numeric(arg(2)))){
+    //get the childern of the term
+    if ($child_terms = taxonomy_get_children(arg(2))){
+      //only care about the tids
+      $child_terms_tids = array();
+      foreach ($child_terms as $child){
+        $child_terms_tids[] = $child->tid;
+      }
+      if(count($child_terms_tids)==0){
+        unset($form['taxonomy_catalog_tid']);
+      }else{
+        //for the exposed filter, alter the available options
+        foreach ($form['taxonomy_catalog_tid']['#options'] as $key => $term){
+          //is is a child term?
+          if(is_object($term)){
+            if($term->option){
+              $keys=array_keys($term->option);
+              $tid=$keys[0];
+              if (!in_array($tid,$child_terms_tids)){
+                unset($form['taxonomy_catalog_tid']['#options'][$key]);
+              }
+            }
+
+          }
+
+        }
+      }
+
+    }
+  }
 }

@@ -179,3 +179,4 @@ function oms_uc_cart_block_title_icon($variables) {
 
     return l('<span class="' . $icon_class . '" title="' . t('View your shopping cart.') . '"></span>', 'cart', array('html' => TRUE));
 }
+
