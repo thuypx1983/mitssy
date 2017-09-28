@@ -1,0 +1,45 @@
+body.views--products-list--page-1{
+  .page-title{
+    .container{
+      border-bottom: 1px solid #ccc;
+    }
+    padding: 20px 0;
+    h1.title{
+      text-align: center;
+      color: $color7;
+      font-size: 30px;
+      font-weight: 300;
+      margin-bottom: 15px;
+      padding-bottom: 3px;
+      margin-top: 0px;
+      text-transform: uppercase
+    }
+  }
+  .view-products-list{
+    .views-row{
+      margin-bottom: 30px;
+      .row-content{
+        padding: 5px;
+        border: 1px solid transparent;
+        &:hover{
+          border: 1px solid $color2;
+        }
+      }
+      .views-field-title{
+        padding-top: 5px;
+        padding-left: 15px;
+        h4{
+          font-size: 14px;
+        }
+      }
+      .views-field-sell-price{
+        padding-left: 15px;
+        .uc-price{
+          color: $color1;
+          font-weight: bold;
+        }
+      }
+
+    }
+  }
+}

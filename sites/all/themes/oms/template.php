@@ -41,6 +41,14 @@ function oms_preprocess_html(&$variables) {
   drupal_add_css('//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css', array('type' => 'external'));
   drupal_add_css('//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.min.css', array('type' => 'external'));
   drupal_add_js('//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js', array('type' => 'external'));
+
+    // Query the view and add a class
+    $view = views_get_page_view();
+    if (isset($view) && ($view->current_display == "page"
+            || $view->current_display == "page_1"
+            || $view->current_display == "page_2")) {
+        $variables['classes_array'][] = str_replace('_','-','views--'.$view->name.'--'.$view->current_display);
+    }
 }
 
 

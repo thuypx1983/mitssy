@@ -1,0 +1,64 @@
+body.views--set-products--page-2{
+  .page-title{
+    .container{
+      border-bottom: 1px solid #ccc;
+    }
+    padding: 20px 0;
+    h1.title{
+      text-align: center;
+      color: $color7;
+      font-size: 30px;
+      font-weight: 300;
+      margin-bottom: 15px;
+      padding-bottom: 3px;
+      margin-top: 0px;
+      text-transform: uppercase
+    }
+  }
+  .view-set-products{
+    .views-row{
+      margin-bottom: 50px;
+      .group-image{
+        position: relative;
+        &:hover{
+          .views-field-view-node{
+            display: block;
+            height: 50px;
+            transition:height 1s ease 0s;
+
+            a{
+              display: block;
+            }
+          }
+        }
+        .views-field-view-node{
+          height: 0;
+          position: absolute;
+          bottom: 0px;
+          text-align: center;
+          background-color: $color1;
+          width: 100%;
+
+          overflow: hidden;
+          transition: height 1s ease 0s;
+
+          a{
+            color: $color3;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 50px;
+          }
+        }
+      }
+      .views-field-title{
+        padding: 20px 0px;
+        h4{
+          font-weight: bold;
+          font-size: 14px;
+          text-transform: uppercase;
+        }
+      }
+
+    }
+  }
+}
