@@ -6,13 +6,13 @@ body { background-color:#ffffff; }
 
 /* Menu */
 
-#wrap { border-top: 3px solid #2e2e2e; }
+#wrap { border-top: 3px solid #f9f9f9; }
 
-#main-menu .menu a.active, #main-menu .menu ul a.active { background: #2e2e2e; }
+#main-menu .menu a.active, #main-menu .menu ul a.active { background: #f9f9f9; }
 
-#main-menu .menu a.active-trail { background: #2e2e2e; }
+#main-menu .menu a.active-trail { background: #f9f9f9; }
 
-#sitename h1 a:hover, #sitename h2 a:hover { color: #2e2e2e; }
+#sitename h1 a:hover, #sitename h2 a:hover { color: #f9f9f9; }
 
 /* Menu Hover */
 
@@ -21,7 +21,7 @@ body { background-color:#ffffff; }
 #main-menu .menu a:active,
 #main-menu .menu ul a:focus,
 #main-menu .menu ul a:hover,
-#main-menu .menu ul a:active { background: #2e2e2e }
+#main-menu .menu ul a:active { background: #f9f9f9 }
 
 /* Link */
 
