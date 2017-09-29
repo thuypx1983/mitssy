@@ -492,5 +492,18 @@ body.views--products-list--page-1 .view-products-list .views-row {
     body.views--products-list--page-1 .view-products-list .views-row .views-field-sell-price .uc-price {
       color: #00beb4;
       font-weight: bold; }
+body.views--products-list--page-1 .views-exposed-form {
+  padding-bottom: 20px; }
+  body.views--products-list--page-1 .views-exposed-form select {
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    border-bottom: 1px solid #dfdfdf;
+    border-radius: 0px;
+    line-height: 30px;
+    padding: 5px 10px;
+    background-color: #ffffff; }
+  body.views--products-list--page-1 .views-exposed-form #edit-submit-products-list {
+    display: none; }
 
 /*# sourceMappingURL=style.css.map */

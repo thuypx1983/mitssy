@@ -42,4 +42,21 @@ body.views--products-list--page-1{
 
     }
   }
+  .views-exposed-form{
+    padding-bottom: 20px;
+    select{
+      border-right:none;
+      border-top:none;
+      border-left:none;
+      border-bottom: 1px solid $color4;
+      border-radius: 0px;
+      line-height: 30px;
+      padding: 5px 10px;
+      background-color: $color3;
+    }
+    #edit-submit-products-list{
+      display: none;
+    }
+
+  }
 }
