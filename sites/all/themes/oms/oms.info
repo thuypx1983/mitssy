@@ -7,7 +7,9 @@ stylesheets[all][] = fronts/font-awesome-4.7.0/css/font-awesome.min.css
 stylesheets[all][] = css/style.css
 stylesheets[all][] = color/colors.css
 stylesheets[all][] = js/pushy/css/pushy.css
+stylesheets[all][] = js/magnific-popup/magnific-popup.css
 scripts[] = css/bootstrap-3.3.7/js/bootstrap.js
+scripts[] = js/magnific-popup/jquery.magnific-popup.js
 scripts[] = js/overwrites.js
 scripts[] = js/scripts.js
 

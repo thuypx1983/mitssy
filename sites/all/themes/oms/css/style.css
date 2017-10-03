@@ -462,10 +462,13 @@ body.views--set-products--page-2 .view-set-products .views-row {
       font-size: 14px;
       text-transform: uppercase; }
 
+body.views--products-list--page-2 .page-title,
 body.views--products-list--page-1 .page-title {
   padding: 20px 0; }
+  body.views--products-list--page-2 .page-title .container,
   body.views--products-list--page-1 .page-title .container {
     border-bottom: 1px solid #ccc; }
+  body.views--products-list--page-2 .page-title h1.title,
   body.views--products-list--page-1 .page-title h1.title {
     text-align: center;
     color: #2e2e2e;
@@ -475,31 +478,42 @@ body.views--products-list--page-1 .page-title {
     padding-bottom: 3px;
     margin-top: 0px;
     text-transform: uppercase; }
+body.views--products-list--page-2 .view-products-list,
 body.views--products-list--page-1 .view-products-list {
   position: relative; }
+  body.views--products-list--page-2 .view-products-list .views-row,
   body.views--products-list--page-1 .view-products-list .views-row {
     margin-bottom: 30px; }
+    body.views--products-list--page-2 .view-products-list .views-row .row-content,
     body.views--products-list--page-1 .view-products-list .views-row .row-content {
       padding: 5px;
       border: 1px solid transparent; }
+      body.views--products-list--page-2 .view-products-list .views-row .row-content:hover,
       body.views--products-list--page-1 .view-products-list .views-row .row-content:hover {
         border: 1px solid #e8e8e8; }
+    body.views--products-list--page-2 .view-products-list .views-row .views-field-title,
     body.views--products-list--page-1 .view-products-list .views-row .views-field-title {
       padding-top: 5px;
       padding-left: 15px; }
+      body.views--products-list--page-2 .view-products-list .views-row .views-field-title h4,
       body.views--products-list--page-1 .view-products-list .views-row .views-field-title h4 {
         font-size: 14px; }
+    body.views--products-list--page-2 .view-products-list .views-row .views-field-sell-price,
     body.views--products-list--page-1 .view-products-list .views-row .views-field-sell-price {
       padding-left: 15px; }
+      body.views--products-list--page-2 .view-products-list .views-row .views-field-sell-price .uc-price,
       body.views--products-list--page-1 .view-products-list .views-row .views-field-sell-price .uc-price {
         color: #00beb4;
         font-weight: bold; }
+  body.views--products-list--page-2 .view-products-list .view-header,
   body.views--products-list--page-1 .view-products-list .view-header {
     position: absolute;
     right: 15px;
     top: 20px; }
+body.views--products-list--page-2 .views-exposed-form,
 body.views--products-list--page-1 .views-exposed-form {
   padding-bottom: 20px; }
+  body.views--products-list--page-2 .views-exposed-form select,
   body.views--products-list--page-1 .views-exposed-form select {
     border-right: none;
     border-top: none;
@@ -509,8 +523,10 @@ body.views--products-list--page-1 .views-exposed-form {
     line-height: 30px;
     padding: 5px 10px;
     background-color: #ffffff; }
+  body.views--products-list--page-2 .views-exposed-form #edit-submit-products-list,
   body.views--products-list--page-1 .views-exposed-form #edit-submit-products-list {
     display: none; }
+body.views--products-list--page-2 .ajax-progress,
 body.views--products-list--page-1 .ajax-progress {
   background-position-x: center;
   background-position-y: center;
@@ -522,5 +538,11 @@ body.views--products-list--page-1 .ajax-progress {
   top: 0;
   z-index: 9999;
   background: url("../images/loading.gif") no-repeat center transparent; }
+
+.node-type-project .node-project .field-name-field-image .field-item {
+  margin-bottom: 30px; }
+
+.node-type-project #main .container {
+  max-width: 980px; }
 
 /*# sourceMappingURL=style.css.map */
