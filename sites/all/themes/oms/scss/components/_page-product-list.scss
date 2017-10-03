@@ -16,6 +16,7 @@ body.views--products-list--page-1{
     }
   }
   .view-products-list{
+    position: relative;
     .views-row{
       margin-bottom: 30px;
       .row-content{
@@ -41,6 +42,12 @@ body.views--products-list--page-1{
       }
 
     }
+
+    .view-header{
+      position: absolute;
+      right: 15px;
+      top: 20px;
+    }
   }
   .views-exposed-form{
     padding-bottom: 20px;
@@ -58,5 +65,17 @@ body.views--products-list--page-1{
       display: none;
     }
 
+  }
+  .ajax-progress {
+    background-position-x: center;
+    background-position-y: center;
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    background: url('../images/loading.gif') no-repeat center rgba(0,0,0,0.0);
   }
 }
