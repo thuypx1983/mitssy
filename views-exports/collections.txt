@@ -1,0 +1,141 @@
+$view = new view();
+$view->name = 'collection';
+$view->description = '';
+$view->tag = 'default';
+$view->base_table = 'node';
+$view->human_name = 'Bộ sưu tập';
+$view->core = 7;
+$view->api_version = '3.0';
+$view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+/* Display: Master */
+$handler = $view->new_display('default', 'Master', 'default');
+$handler->display->display_options['title'] = 'Bộ sưu tập';
+$handler->display->display_options['use_more_always'] = FALSE;
+$handler->display->display_options['access']['type'] = 'perm';
+$handler->display->display_options['cache']['type'] = 'none';
+$handler->display->display_options['query']['type'] = 'views_query';
+$handler->display->display_options['exposed_form']['type'] = 'basic';
+$handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Thiết lập lại';
+$handler->display->display_options['pager']['type'] = 'some';
+$handler->display->display_options['pager']['options']['items_per_page'] = '5';
+$handler->display->display_options['style_plugin'] = 'default';
+$handler->display->display_options['row_plugin'] = 'fields';
+/* Tiêu đề: Global: Text area */
+$handler->display->display_options['header']['area']['id'] = 'area';
+$handler->display->display_options['header']['area']['table'] = 'views';
+$handler->display->display_options['header']['area']['field'] = 'area';
+$handler->display->display_options['header']['area']['label'] = 'summary';
+$handler->display->display_options['header']['area']['content'] = 'Bộ sưu tập The New Wave (Làn Sóng Mới) được ra mắt lần đầu tiên vào tháng 4/ 2017 tại Missy,
+The New Wave mang đến 3 mẫu bàn sofa được lựa chọn riêng cho những tín đồ đam mê nội thất:
+Hướng đến cái đẹp nhưng vẫn đảm bảo công năng. ';
+$handler->display->display_options['header']['area']['format'] = 'full_html';
+/* Trường: Global: Fieldset */
+$handler->display->display_options['fields']['fieldset']['id'] = 'fieldset';
+$handler->display->display_options['fields']['fieldset']['table'] = 'views';
+$handler->display->display_options['fields']['fieldset']['field'] = 'fieldset';
+$handler->display->display_options['fields']['fieldset']['label'] = 'column1';
+$handler->display->display_options['fields']['fieldset']['children'] = array(
+  0 => 'uc_product_image',
+);
+$handler->display->display_options['fields']['fieldset']['fieldset']['type'] = 'div';
+$handler->display->display_options['fields']['fieldset']['fieldset']['classes'] = 'column-1';
+/* Trường: Nội dung: Image */
+$handler->display->display_options['fields']['uc_product_image']['id'] = 'uc_product_image';
+$handler->display->display_options['fields']['uc_product_image']['table'] = 'field_data_uc_product_image';
+$handler->display->display_options['fields']['uc_product_image']['field'] = 'uc_product_image';
+$handler->display->display_options['fields']['uc_product_image']['label'] = '';
+$handler->display->display_options['fields']['uc_product_image']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['uc_product_image']['click_sort_column'] = 'fid';
+$handler->display->display_options['fields']['uc_product_image']['settings'] = array(
+  'image_style' => 'style_255x255',
+  'image_link' => 'content',
+);
+$handler->display->display_options['fields']['uc_product_image']['delta_offset'] = '0';
+/* Trường: Global: Fieldset */
+$handler->display->display_options['fields']['fieldset_1']['id'] = 'fieldset_1';
+$handler->display->display_options['fields']['fieldset_1']['table'] = 'views';
+$handler->display->display_options['fields']['fieldset_1']['field'] = 'fieldset';
+$handler->display->display_options['fields']['fieldset_1']['label'] = 'Colum2';
+$handler->display->display_options['fields']['fieldset_1']['children'] = array(
+  0 => 'title',
+  1 => 'sell_price',
+  2 => 'field_summary',
+  3 => 'view_node',
+);
+$handler->display->display_options['fields']['fieldset_1']['fieldset']['type'] = 'div';
+$handler->display->display_options['fields']['fieldset_1']['fieldset']['classes'] = 'column-2';
+/* Trường: Nội dung: Tiêu đề */
+$handler->display->display_options['fields']['title']['id'] = 'title';
+$handler->display->display_options['fields']['title']['table'] = 'node';
+$handler->display->display_options['fields']['title']['field'] = 'title';
+$handler->display->display_options['fields']['title']['label'] = '';
+$handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
+$handler->display->display_options['fields']['title']['alter']['text'] = '<h3>[title]</h3>';
+$handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+$handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+$handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+/* Trường: Product: Sell price */
+$handler->display->display_options['fields']['sell_price']['id'] = 'sell_price';
+$handler->display->display_options['fields']['sell_price']['table'] = 'uc_products';
+$handler->display->display_options['fields']['sell_price']['field'] = 'sell_price';
+$handler->display->display_options['fields']['sell_price']['label'] = '';
+$handler->display->display_options['fields']['sell_price']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['sell_price']['precision'] = '0';
+/* Trường: Nội dung: summary */
+$handler->display->display_options['fields']['field_summary']['id'] = 'field_summary';
+$handler->display->display_options['fields']['field_summary']['table'] = 'field_data_field_summary';
+$handler->display->display_options['fields']['field_summary']['field'] = 'field_summary';
+$handler->display->display_options['fields']['field_summary']['label'] = '';
+$handler->display->display_options['fields']['field_summary']['element_label_colon'] = FALSE;
+/* Trường: Nội dung: Liên kết */
+$handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+$handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+$handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+$handler->display->display_options['fields']['view_node']['label'] = '';
+$handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['view_node']['text'] = 'Xem thêm';
+/* Sort criterion: Nội dung: Post date */
+$handler->display->display_options['sorts']['created']['id'] = 'created';
+$handler->display->display_options['sorts']['created']['table'] = 'node';
+$handler->display->display_options['sorts']['created']['field'] = 'created';
+$handler->display->display_options['sorts']['created']['order'] = 'DESC';
+/* Filter criterion: Nội dung: Đã công bố */
+$handler->display->display_options['filters']['status']['id'] = 'status';
+$handler->display->display_options['filters']['status']['table'] = 'node';
+$handler->display->display_options['filters']['status']['field'] = 'status';
+$handler->display->display_options['filters']['status']['value'] = 1;
+$handler->display->display_options['filters']['status']['group'] = 1;
+$handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+/* Filter criterion: Nội dung: Kiểu */
+$handler->display->display_options['filters']['type']['id'] = 'type';
+$handler->display->display_options['filters']['type']['table'] = 'node';
+$handler->display->display_options['filters']['type']['field'] = 'type';
+$handler->display->display_options['filters']['type']['value'] = array(
+  'product' => 'product',
+);
+
+/* Display: Page */
+$handler = $view->new_display('page', 'Page', 'page');
+$handler->display->display_options['path'] = 'bo-suu-tap.html';
+$translatables['collection'] = array(
+  t('Master'),
+  t('Bộ sưu tập'),
+  t('more'),
+  t('Apply'),
+  t('Thiết lập lại'),
+  t('Sort by'),
+  t('Asc'),
+  t('Desc'),
+  t('summary'),
+  t('Bộ sưu tập The New Wave (Làn Sóng Mới) được ra mắt lần đầu tiên vào tháng 4/ 2017 tại Missy,
+The New Wave mang đến 3 mẫu bàn sofa được lựa chọn riêng cho những tín đồ đam mê nội thất:
+Hướng đến cái đẹp nhưng vẫn đảm bảo công năng. '),
+  t('column1'),
+  t('Colum2'),
+  t('<h3>[title]</h3>'),
+  t('.'),
+  t(','),
+  t('Xem thêm'),
+  t('Page'),
+);

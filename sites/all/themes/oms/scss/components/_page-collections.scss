@@ -1,0 +1,70 @@
+.views--collection--page{
+  .page-title{
+    h1.title{
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: 400;
+    }
+  }
+  .view-header{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid $color11;
+  }
+}
+.view-collection{
+  .views-row{
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid $color11;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    .column-1{}
+    .column-1,.column-2{
+      width: 50%;
+      text-align: center;
+    }
+    &.views-row-odd{
+      .column-1,.column-2{
+        float: left;
+      }
+      .column-1{
+        padding-right: 12%;
+      }
+    }
+    &.views-row-even{
+      .column-1,.column-2{
+        float: right;
+      }
+    }
+  }
+  .views-field-view-node{
+    a{
+      margin-top: 20px;
+      background-color: transparent;
+      color: #00BEB4 !important;
+      border: 1px solid #00BEB4;
+      padding: 15px 20px;
+      display: inline-block;
+    }
+  }
+  .views-field-sell-price{
+    padding-bottom: 20px;
+    .uc-price{
+      display: inline-block;
+      position: relative;
+      padding-bottom: 20px;
+      &:after{
+        content: "";
+        position: absolute;
+        height: 1px;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        background-color: $color5;
+      }
+    }
+  }
+}
