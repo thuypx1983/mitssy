@@ -74,18 +74,25 @@ function product_extend_node_view($node, $view_mode, $langcode) {
  * Declare our Facebook Like button as a pseudo-field.
  */
 function product_extend_field_extra_fields() {
+
   $extra['node']['product']['display'] = array(
-    'product_title' => array(
+    'news_title' => array(
       'label' => t('Title'),
       'description' => t('Title.'),
       'weight' => 1,
     ),
+    'created' => array(
+      'label' => t('Created date'),
+      'description' => t('created date.'),
+      'weight' => 1,
+    ) ,
     'social_buttons' => array(
       'label' => t('social_buttons'),
       'description' => t('social_buttons'),
       'weight' => 1,
     )
   );
+
   $extra['node']['article']['display'] = array(
     'news_title' => array(
       'label' => t('Title'),
