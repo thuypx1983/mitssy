@@ -35,12 +35,12 @@ function oms_process_html(&$vars) {
 }
 
 function oms_preprocess_html(&$variables) {
-
   drupal_add_css('//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i', array('type' => 'external'));
   drupal_add_css('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array('type' => 'external'));
   drupal_add_css('//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css', array('type' => 'external'));
   drupal_add_css('//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.min.css', array('type' => 'external'));
   drupal_add_js('//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js', array('type' => 'external'));
+
 
     // Query the view and add a class
     $view = views_get_page_view();
@@ -188,3 +188,30 @@ function oms_uc_cart_block_title_icon($variables) {
     return l('<span class="' . $icon_class . '" title="' . t('View your shopping cart.') . '"></span>', 'cart', array('html' => TRUE));
 }
 
+
+
+/**
+ * Themes the uc_cart_view_form().
+ *
+ * Outputs a hidden copy of the update cart button first, so pressing Enter
+ * updates the cart instead of removing an item.
+ *
+ * @param $variables
+ *   An associative array containing:
+ *   - form: A render element representing the form.
+ *
+ * @see uc_cart_view_form()
+ * @ingroup themeable
+ */
+function oms_uc_cart_view_form($variables) {
+  $form = &$variables['form'];
+
+  $output = '<div class="uc-default-submit">';
+  $output .= drupal_render($form['actions']['update']);
+  $output .= '</div>';
+  $form['actions']['update']['#printed'] = FALSE;
+
+  $output .= drupal_render_children($form);
+
+  return $output;
+}

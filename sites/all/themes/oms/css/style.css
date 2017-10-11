@@ -405,13 +405,21 @@ header .container-top {
     text-transform: uppercase;
     font-weight: normal; }
 
+.block-reated-products .title {
+  font-weight: bold;
+  font-size: 16px; }
+.block-reated-products .views-field-title {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
 /*global*/
 .footer {
   background-color: #ebebeb;
   border-top: 1px solid #ccc;
   clear: both;
   padding-top: 30px;
-  width: 100%; }
+  width: 100%;
+  margin-top: 65px; }
 
 .footer-address p {
   color: #959595;
@@ -648,5 +656,13 @@ body.views--products-list--page-1 .ajax-progress {
       left: 0px;
       width: 100%;
       background-color: #2b2b2b; }
+
+.node-type-product .node-add-to-cart {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: auto; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,38 @@
+/* ---------- Color Module Styles ----------- */
+
+/* Main background */
+
+body { background-color:#ffffff; }
+
+/* Menu */
+
+#wrap { border-top: 3px solid #f9f9f9; }
+
+#main-menu .menu a.active, #main-menu .menu ul a.active { background: #f9f9f9; }
+
+#main-menu .menu a.active-trail { background: #f9f9f9; }
+
+#sitename h1 a:hover, #sitename h2 a:hover { color: #f9f9f9; }
+
+/* Menu Hover */
+
+#main-menu .menu a:focus,
+#main-menu .menu a:hover,
+#main-menu .menu a:active,
+#main-menu .menu ul a:focus,
+#main-menu .menu ul a:hover,
+#main-menu .menu ul a:active { background: #f9f9f9 }
+
+/* Link */
+
+a { color: #2e2e2e; }
+
+a:hover { color: #2e2e2e; }
+
+.links li a:hover, .field-name-field-tags a:hover { color: #2e2e2e; }
+
+/* Button */
+
+.form-submit { background: #f66401; border-color:#f66401; }
+
+.form-submit:hover { background: #f66401; }
