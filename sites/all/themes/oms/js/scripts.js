@@ -142,7 +142,9 @@
 
     $(document).ready(function(){
 
-
+        $('.block-search .fa-search').click(function () {
+            $('.block-search .content').show();
+        })
         $(document).on("click",function (event) {
             if (!$(event.target).is(".block-search .content .container-inline, #edit-search-block-form--2,.block-search .title .fa.fa-search")) {
                 $('.block-search .content').hide();
@@ -153,12 +155,6 @@
         STNScript.createMenuMobile();
 
 
-        $(document).on("click",function (event) {
-            if (!$(event.target).is("#block-search-form,.search-icon,.glyphicon-search,#edit-search-block-form--2")) {
-                $('#block-search-form').removeClass('open-popup');;
-
-            }
-        })
 
     })
     $(window).on('load',function(){

@@ -248,6 +248,10 @@ header .container-top {
   transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
   width: 100%; }
 
+@media only screen and (max-width: 767px) {
+  .block-search .content {
+    position: fixed;
+    width: 100%; } }
 #navigation #main-menu ul {
   z-index: 9999; }
   #navigation #main-menu ul li {
