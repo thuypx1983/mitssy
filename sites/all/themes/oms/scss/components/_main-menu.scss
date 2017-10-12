@@ -60,3 +60,44 @@
     }
   }
 }
+
+@include bp(max-width,$bp-tablet) {
+  #main-menu .menu a.active-trail{
+    background: transparent !important;
+  }
+  #navigation #main-menu >ul{
+    &>li{
+      border-bottom: 1px solid $color3;
+      display: block;
+      width: 100%;
+      text-align: left;
+      margin-left: 0px;
+      position: relative;
+      a{
+        color: $color3;
+        display: inline-block;
+      }
+      .fa{
+        position: absolute;
+        right: 5px;
+        top: 10px;
+        color: $color3;
+        padding: 10px;
+      }
+      &>ul{
+        position: inherit;
+        background-color: $color1;
+        width: 100%;
+      }
+      &.mega{
+        &>ul{
+          width: 100%;
+          &>li{
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

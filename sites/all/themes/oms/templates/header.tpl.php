@@ -3,7 +3,16 @@
   <div id="header-top">
     <div class="container container-top">
       <div class="row">
-        <?php print render($page['header_top']); ?>
+        <div class="button-mobile hidden-md hidden-lg">
+          <div class="menu-btn">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </div>
+        </div>
+        <div class="top-left">
+          <?php print render($page['header_top']); ?>
+        </div>
       </div>
     </div>
   </div>

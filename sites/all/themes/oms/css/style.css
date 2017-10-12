@@ -46,6 +46,65 @@ header .container-top {
     #header-top .block-logo a img {
       margin-top: 6px; }
 
+@media only screen and (max-width: 767px) {
+  #header-top .block-logo a {
+    width: 100%; }
+    #header-top .block-logo a img {
+      margin-top: 0px;
+      max-height: 40px; }
+
+  header .container-top {
+    width: 100%; }
+
+  .container-top .row {
+    margin: 0px;
+    display: table;
+    width: 100%; }
+    .container-top .row .button-mobile {
+      display: table-cell;
+      text-align: left;
+      width: 50px;
+      vertical-align: middle; }
+      .container-top .row .button-mobile .menu-btn {
+        float: none; }
+    .container-top .row .top-left {
+      display: table-cell; }
+      .container-top .row .top-left .region-header-top {
+        display: table;
+        width: 100%; }
+        .container-top .row .top-left .region-header-top > div {
+          display: table-cell;
+          padding: 0px; }
+        .container-top .row .top-left .region-header-top .fa {
+          font-size: 20px; }
+        .container-top .row .top-left .region-header-top #block-search-form {
+          width: 50px; }
+        .container-top .row .top-left .region-header-top #block-system-user-menu {
+          width: 50px;
+          display: none; }
+        .container-top .row .top-left .region-header-top #block-uc-cart-cart {
+          width: 50px;
+          height: auto; }
+          .container-top .row .top-left .region-header-top #block-uc-cart-cart .cart-block-title-bar {
+            display: none; }
+        .container-top .row .top-left .region-header-top .block-logo {
+          text-align: center;
+          padding-left: 10px;
+          padding-right: 10px; }
+        .container-top .row .top-left .region-header-top p, .container-top .row .top-left .region-header-top a, .container-top .row .top-left .region-header-top img {
+          padding: 0px;
+          margin: 0px; }
+
+  .menu-btn {
+    display: inline-block;
+    float: right; }
+    .menu-btn span.icon-bar {
+      display: block;
+      height: 4px;
+      background-color: #ffffff;
+      width: 30px;
+      margin-top: 8px;
+      border-radius: 2px; } }
 /*components*/
 .block-uc-cart {
   height: 56px;
@@ -231,6 +290,35 @@ header .container-top {
         float: left;
         width: 33.3333%; }
 
+@media only screen and (max-width: 767px) {
+  #main-menu .menu a.active-trail {
+    background: transparent !important; }
+
+  #navigation #main-menu > ul > li {
+    border-bottom: 1px solid #ffffff;
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-left: 0px;
+    position: relative; }
+    #navigation #main-menu > ul > li a {
+      color: #ffffff;
+      display: inline-block; }
+    #navigation #main-menu > ul > li .fa {
+      position: absolute;
+      right: 5px;
+      top: 10px;
+      color: #ffffff;
+      padding: 10px; }
+    #navigation #main-menu > ul > li > ul {
+      position: inherit;
+      background-color: #00beb4;
+      width: 100%; }
+    #navigation #main-menu > ul > li.mega > ul {
+      width: 100%; }
+      #navigation #main-menu > ul > li.mega > ul > li {
+        display: block;
+        width: 100%; } }
 .main-slider .slick-next {
   right: 25px;
   z-index: 10;
