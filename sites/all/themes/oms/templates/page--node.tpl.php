@@ -69,6 +69,9 @@
     <?php
     include(drupal_get_path('theme', 'oms').'/templates/header.tpl.php');
     ?>
+  <?php if ($page['home_banner']): ?>
+          <div id="home-banner"> <?php print render($page['home_banner']); ?></div>
+  <?php endif; ?>
     <div id="main">
         <div class="container">
             <div class="content-header">
