@@ -139,6 +139,13 @@ function product_extend_field_extra_fields() {
       'weight' => 1,
     )
   );
+  $extra['node']['page']['display'] = array(
+    'social_buttons' => array(
+      'label' => t('social_buttons'),
+      'description' => t('social_buttons'),
+      'weight' => 1,
+    )
+  );
 
   return $extra;
 }

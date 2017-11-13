@@ -757,4 +757,46 @@ body.views--products-list--page-1 .ajax-progress {
   padding-bottom: 15px;
   height: auto; }
 
+.page-node-28 .node-page .field-name-body .field-item > h3 {
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 30px; }
+  .page-node-28 .node-page .field-name-body .field-item > h3:before, .page-node-28 .node-page .field-name-body .field-item > h3:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%; }
+  .page-node-28 .node-page .field-name-body .field-item > h3:before {
+    right: 0.5em;
+    margin-left: -50%; }
+  .page-node-28 .node-page .field-name-body .field-item > h3:after {
+    left: 0.5em;
+    margin-right: -50%; }
+.page-node-28 #block-views-special-product-block, .page-node-28 #block-views-projects-block-1 {
+  margin-top: 50px;
+  display: table; }
+  .page-node-28 #block-views-special-product-block .title, .page-node-28 #block-views-projects-block-1 .title {
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    display: block; }
+    .page-node-28 #block-views-special-product-block .title:before, .page-node-28 #block-views-special-product-block .title:after, .page-node-28 #block-views-projects-block-1 .title:before, .page-node-28 #block-views-projects-block-1 .title:after {
+      background-color: #000;
+      content: "";
+      display: inline-block;
+      height: 1px;
+      position: relative;
+      vertical-align: middle;
+      width: 50%; }
+    .page-node-28 #block-views-special-product-block .title:before, .page-node-28 #block-views-projects-block-1 .title:before {
+      right: 0.5em;
+      margin-left: -50%; }
+    .page-node-28 #block-views-special-product-block .title:after, .page-node-28 #block-views-projects-block-1 .title:after {
+      left: 0.5em;
+      margin-right: -50%; }
+
 /*# sourceMappingURL=style.css.map */

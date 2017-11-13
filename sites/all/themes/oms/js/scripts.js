@@ -40,6 +40,12 @@
                 arrows: true,
                 dots:true
             })
+            $('#block-views-projects-block-1').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: true,
+                dots:false
+            })
             $('.block-featured-product .view-content').slick({
                 autoplay: false,
                 arrows: true,

@@ -1,0 +1,64 @@
+.page-node-28{
+  .node-page{
+    .field-name-body{
+      .field-item{
+        &>h3{
+          overflow: hidden;
+          text-align: center;
+          margin-bottom: 30px;
+          &:before,&:after{
+            background-color: #000;
+            content: "";
+            display: inline-block;
+            height: 1px;
+            position: relative;
+            vertical-align: middle;
+            width: 50%;
+          }
+          &:before{
+            right: 0.5em;
+            margin-left: -50%;
+          }
+          &:after{
+
+            left: 0.5em;
+            margin-right: -50%;
+          }
+        }
+      }
+    }
+  }
+
+  #block-views-special-product-block,#block-views-projects-block-1{
+
+    margin-top: 50px;
+    display: table;
+    .title{
+      overflow: hidden;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 24px;
+      display: block;
+      &:before,&:after{
+        background-color: #000;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+      }
+      &:before{
+        right: 0.5em;
+        margin-left: -50%;
+      }
+      &:after{
+
+        left: 0.5em;
+        margin-right: -50%;
+      }
+    }
+  }
+  #block-views-projects-block-1{
+  }
+}
