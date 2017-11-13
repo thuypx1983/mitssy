@@ -39,13 +39,15 @@
                 autoplaySpeed: 2000,
                 arrows: true,
                 dots:true
-            })
-            $('.view-projects.view-display-id-block_1 .view-content').slick({
-                autoplay: true,
-                autoplaySpeed: 2000,
-                arrows: true,
-                dots:false
-            })
+            });
+
+            $('.view-id-projects.view-display-id-block_1 .view-content').slick({
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    arrows: true,
+                    dots:false
+                } );
+
             $('.block-featured-product .view-content').slick({
                 autoplay: false,
                 arrows: true,
@@ -53,8 +55,8 @@
                 infinite: true,
                 slidesToShow: 4,
                 slidesToScroll: 4,
-                dots:true,
-            })
+                dots:true
+            });
         },
 
         autoHeight:function(){

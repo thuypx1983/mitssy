@@ -777,7 +777,8 @@ body.views--products-list--page-1 .ajax-progress {
     margin-right: -50%; }
 .page-node-28 #block-views-special-product-block, .page-node-28 #block-views-projects-block-1 {
   margin-top: 50px;
-  display: table; }
+  display: table;
+  width: 100%; }
   .page-node-28 #block-views-special-product-block .title, .page-node-28 #block-views-projects-block-1 .title {
     overflow: hidden;
     text-align: center;
