@@ -40,7 +40,7 @@
                 arrows: true,
                 dots:true
             })
-            $('#block-views-projects-block-1').slick({
+            $('#block-views-projects-block-1 .view-content').slick({
                 autoplay: true,
                 autoplaySpeed: 2000,
                 arrows: true,
