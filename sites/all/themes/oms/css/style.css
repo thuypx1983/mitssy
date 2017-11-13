@@ -809,5 +809,7 @@ body.views--products-list--page-1 .ajax-progress {
       .page-node-28 #block-views-projects-block-1 .content .view-projects .view-content {
         width: 100%;
         display: block; }
+.page-node-28 .field-collection-container {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */
