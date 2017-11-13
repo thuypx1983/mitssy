@@ -30,9 +30,7 @@
   }
 
   #block-views-special-product-block,#block-views-projects-block-1{
-
     margin-top: 50px;
-    display: block;
     width: 100%;
     .title{
       overflow: hidden;
@@ -60,7 +58,12 @@
       }
     }
   }
+  #block-views-special-product-block{
+
+    display: table;
+  }
   #block-views-projects-block-1{
+    display: block;
     .content{
       max-width: 100%;
 
