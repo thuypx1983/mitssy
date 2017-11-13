@@ -777,7 +777,7 @@ body.views--products-list--page-1 .ajax-progress {
     margin-right: -50%; }
 .page-node-28 #block-views-special-product-block, .page-node-28 #block-views-projects-block-1 {
   margin-top: 50px;
-  display: table;
+  display: block;
   width: 100%; }
   .page-node-28 #block-views-special-product-block .title, .page-node-28 #block-views-projects-block-1 .title {
     overflow: hidden;
@@ -799,5 +799,12 @@ body.views--products-list--page-1 .ajax-progress {
     .page-node-28 #block-views-special-product-block .title:after, .page-node-28 #block-views-projects-block-1 .title:after {
       left: 0.5em;
       margin-right: -50%; }
+.page-node-28 #block-views-projects-block-1 .content {
+  max-width: 100%; }
+  .page-node-28 #block-views-projects-block-1 .content .view-projects {
+    width: 100%; }
+    .page-node-28 #block-views-projects-block-1 .content .view-projects .view-content {
+      width: 100%;
+      display: block; }
 
 /*# sourceMappingURL=style.css.map */
