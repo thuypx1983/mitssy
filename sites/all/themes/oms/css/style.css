@@ -775,17 +775,17 @@ body.views--products-list--page-1 .ajax-progress {
   .page-node-28 .node-page .field-name-body .field-item > h3:after {
     left: 0.5em;
     margin-right: -50%; }
-.page-node-28 #block-views-special-product-block, .page-node-28 #block-views-projects-block-1, .page-node-28 #partner {
+.page-node-28 #block-views-special-product-block, .page-node-28 #block-views-projects-block-1, .page-node-28 .partner {
   display: block;
   margin-top: 50px;
   width: 100%; }
-  .page-node-28 #block-views-special-product-block .title, .page-node-28 #block-views-projects-block-1 .title, .page-node-28 #partner .title {
+  .page-node-28 #block-views-special-product-block .title, .page-node-28 #block-views-projects-block-1 .title, .page-node-28 .partner .title {
     overflow: hidden;
     text-align: center;
     margin-bottom: 30px;
     font-size: 24px;
     display: block; }
-    .page-node-28 #block-views-special-product-block .title:before, .page-node-28 #block-views-special-product-block .title:after, .page-node-28 #block-views-projects-block-1 .title:before, .page-node-28 #block-views-projects-block-1 .title:after, .page-node-28 #partner .title:before, .page-node-28 #partner .title:after {
+    .page-node-28 #block-views-special-product-block .title:before, .page-node-28 #block-views-special-product-block .title:after, .page-node-28 #block-views-projects-block-1 .title:before, .page-node-28 #block-views-projects-block-1 .title:after, .page-node-28 .partner .title:before, .page-node-28 .partner .title:after {
       background-color: #dfdfdf;
       content: "";
       display: inline-block;
@@ -793,10 +793,10 @@ body.views--products-list--page-1 .ajax-progress {
       position: relative;
       vertical-align: middle;
       width: 50%; }
-    .page-node-28 #block-views-special-product-block .title:before, .page-node-28 #block-views-projects-block-1 .title:before, .page-node-28 #partner .title:before {
+    .page-node-28 #block-views-special-product-block .title:before, .page-node-28 #block-views-projects-block-1 .title:before, .page-node-28 .partner .title:before {
       right: 0.5em;
       margin-left: -50%; }
-    .page-node-28 #block-views-special-product-block .title:after, .page-node-28 #block-views-projects-block-1 .title:after, .page-node-28 #partner .title:after {
+    .page-node-28 #block-views-special-product-block .title:after, .page-node-28 #block-views-projects-block-1 .title:after, .page-node-28 .partner .title:after {
       left: 0.5em;
       margin-right: -50%; }
 .page-node-28 #block-views-special-product-block {
