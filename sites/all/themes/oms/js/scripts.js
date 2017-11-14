@@ -42,7 +42,7 @@
             });
 
             $('.view-id-projects.view-display-id-block_1 .view-content').slick({
-                autoplay: true,
+                autoplay: false,
                 autoplaySpeed: 2000,
                 arrows: true,
                 dots:true

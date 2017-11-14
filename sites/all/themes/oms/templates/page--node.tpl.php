@@ -99,6 +99,9 @@
         }?>
     </div>
 
+      <?php if ($page['home_high3']): ?>
+        <?php print render($page['home_high3']); ?>
+      <?php endif; ?>
     <?php
     include(drupal_get_path('theme', 'oms').'/templates/footer.tpl.php');
     ?>

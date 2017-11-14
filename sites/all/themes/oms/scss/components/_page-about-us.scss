@@ -7,7 +7,7 @@
           text-align: center;
           margin-bottom: 30px;
           &:before,&:after{
-            background-color: #000;
+            background-color: $color4;
             content: "";
             display: inline-block;
             height: 1px;
@@ -39,7 +39,7 @@
       font-size: 24px;
       display: block;
       &:before,&:after{
-        background-color: #000;
+        background-color: $color4;
         content: "";
         display: inline-block;
         height: 1px;
@@ -72,11 +72,43 @@
         .view-content{
           width: 100%;
           display: block;
+          .views-field-field-image{
+            img{
+              width: 100%;
+            }
+          }
+          .views-field-field-customer-reviews{
+            color: $color7;
+            padding-bottom: 20px;
+            .field-content{
+              &:after,&:before{
+                content: '"';
+              }
+            }
+          }
+          .views-field-field-customer{
+            font-style: italic;
+          }
         }
       }
     }
   }
   .field-collection-container{
     display: none;
+  }
+  .why-use-us{
+    margin-top: 50px;
+    display: block;
+    color: $color3;
+    div.title{
+      font-size: 20px;
+      padding: 20px;
+    }
+    .product_title{
+      font-size: 20px;
+      font-weight: bold;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
   }
 }
