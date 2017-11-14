@@ -29,7 +29,8 @@
     }
   }
 
-  #block-views-special-product-block,#block-views-projects-block-1{
+  #block-views-special-product-block,#block-views-projects-block-1,#partner{
+    display: block;
     margin-top: 50px;
     width: 100%;
     .title{
