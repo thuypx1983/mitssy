@@ -834,4 +834,59 @@ body.views--products-list--page-1 .ajax-progress {
     padding-top: 20px;
     padding-bottom: 20px; }
 
+.page-node-32 .region-home-banner {
+  position: relative; }
+  .page-node-32 .region-home-banner #block-webform-client-block-33 {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffffff;
+    padding: 15px;
+    max-width: 25%; }
+    .page-node-32 .region-home-banner #block-webform-client-block-33 input {
+      border: 1px solid #e8e8e8; }
+    .page-node-32 .region-home-banner #block-webform-client-block-33 .title {
+      font-size: 18px;
+      font-weight: bold;
+      padding-bottom: 20px; }
+  .page-node-32 .region-home-banner .captions {
+    position: absolute;
+    left: 10%;
+    top: 20%; }
+.page-node-32 .field-collection-view {
+  border-bottom: 0px;
+  margin-bottom: 15px; }
+.page-node-32 .field-name-field-process .field-label {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+.page-node-32 .field-name-field-process .field-item .entity-field-collection-item .field-name-field-image {
+  width: 50%; }
+  .page-node-32 .field-name-field-process .field-item .entity-field-collection-item .field-name-field-image img {
+    max-width: 50%;
+    border-radius: 50%; }
+.page-node-32 .field-name-field-process .field-item .entity-field-collection-item .group-text {
+  width: 50%; }
+  .page-node-32 .field-name-field-process .field-item .entity-field-collection-item .group-text .field-name-field-caption {
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 15px;
+    margin-top: 30px; }
+.page-node-32 .field-name-field-process .field-item.even .field-name-field-image {
+  float: left;
+  text-align: right;
+  padding-right: 20px; }
+.page-node-32 .field-name-field-process .field-item.even .group-text {
+  float: right; }
+.page-node-32 .field-name-field-process .field-item.odd .field-name-field-image {
+  float: right;
+  text-align: left; }
+.page-node-32 .field-name-field-process .field-item.odd .group-text {
+  float: left;
+  text-align: right; }
+
 /*# sourceMappingURL=style.css.map */

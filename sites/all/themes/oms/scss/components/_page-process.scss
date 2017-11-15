@@ -1,0 +1,86 @@
+.page-node-32{
+  .region-home-banner{
+
+    position: relative;
+    #block-webform-client-block-33{
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: $color3;
+      padding: 15px;
+      max-width: 25%;
+      input{
+        border: 1px solid $color2;
+      }
+      .title{
+        font-size: 18px;
+        font-weight: bold;
+        padding-bottom: 20px;
+      }
+    }
+    .captions{
+      position: absolute;
+      left: 10%;
+      top: 20%;
+    }
+  }
+
+  .field-collection-view{
+    border-bottom: 0px;
+    margin-bottom: 15px;
+  }
+
+  .field-name-field-process{
+    .field-label{
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      display: block;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .field-item{
+      .entity-field-collection-item{
+        .field-name-field-image{
+          width: 50%;
+
+          img{
+            max-width: 50%;
+            border-radius: 50%;
+          }
+        }
+        .group-text{
+          width: 50%;
+          .field-name-field-caption{
+            font-weight: bold;
+            font-size: 20px;
+            padding-bottom: 15px;
+            margin-top: 30px;
+          }
+        }
+      }
+      &.even{
+        .field-name-field-image{
+          float: left;
+          text-align: right;
+          padding-right: 20px;
+        }
+        .group-text{
+          float: right;
+        }
+      }
+      &.odd{
+        .field-name-field-image{
+          float: right;
+          text-align: left;
+        }
+        .group-text{
+          float: left;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
