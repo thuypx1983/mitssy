@@ -191,6 +191,7 @@
         STNScript.initSlick();
         STNScript.createMenuMobile();
         STNScript.faqTree();
+        STNScript.testimonialsEffect();
 
 
 
