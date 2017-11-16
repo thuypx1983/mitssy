@@ -91,4 +91,95 @@
     border-radius: 0px;
     padding: 12px 24px;
   }
+
+  .field-name-field-module-bep,.field-name-field-mau-bep{
+    .slick-prev{
+      left: 10px;
+      z-index: 2;
+      font-size: 20px;
+    }
+    .slick-next{
+      z-index: 2;
+      right: 10px;
+      font-size: 20px
+    }
+    .ui-tabs {
+      border: none;
+      border-radius: 0px;
+      .ui-tabs-panel{
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+      }
+    }
+    .ui-tabs .ui-tabs-nav{
+      border-radius: 0px;
+      border: 0px;
+    }
+    .ui-tabs .ui-tabs-nav li{
+      border-radius: 0px;
+      border: none;
+    }
+    .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited{
+      outline: none;
+    }
+
+  }
+  .field-name-field-regular-faq{
+    .field-label{
+      display: block;
+      text-align: center;
+      padding-top: 35px;
+      padding-bottom: 35px;
+      font-size: 20px;
+      font-weight: normal;
+    }
+    &>.field-items{
+      background-color: $color4;
+    }
+    .field-collection-container{
+      border: none;
+      margin: 0px;
+    }
+    .field-collection-view{
+      border: none;
+      padding: 0px;
+      margin: 0px;
+    }
+    .field-name-field-summary{
+      display: none;
+      &.open{
+        display: block;
+      }
+      background-color: $color3;
+      .field-item{
+        border-bottom: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 45px;
+      }
+    }
+    .field-name-field-faq .field-collection-item-field-faq >.content >.field-name-field-caption > .field-items > .field-item{
+      border-bottom: 1px solid $color3;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 30px;
+    }
+    .field-collection-item-field-regular-faq >.content>.field-name-field-caption>.field-items > .field-item{
+      border-bottom: 1px solid $color3;
+      font-weight: bold;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 15px;
+    }
+    .fa{
+      font-weight: normal;
+      padding: 5px;
+      display: inline-block;
+      background-color: $color1;
+      font-size: 10px;
+      color: $color3;
+      cursor: pointer;
+    }
+  }
 }

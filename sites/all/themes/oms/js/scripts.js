@@ -45,6 +45,11 @@
                 arrows: true,
                 dots:false
             });
+            $('.field-name-field-module-bep .field-name-field-images .field-items').slick({
+                autoplay: false,
+                arrows: true,
+                dots:false
+            });
 
             $('.view-id-projects.view-display-id-block_1 .view-content').slick({
                 autoplay: false,
@@ -158,6 +163,17 @@
 
                 $(this).parent().toggleClass('open');
             })
+        },
+        faqTree:function () {
+            $('.field-name-field-faq .field-name-field-caption .field-item').append(' <i class="fa fa-plus"></i>');
+            $('.field-name-field-faq .field-name-field-caption .field-item').on('click','.fa',function () {
+                if($(this).hasClass('fa-plus')){
+                    $(this).removeClass('fa-plus').addClass('fa-minus');
+                }else{
+                    $(this).removeClass('fa-minus').addClass('fa-plus');
+                }
+                $(this).parent().parent().parent().next().toggleClass('open');
+            })
         }
     }
 
@@ -174,6 +190,7 @@
         })
         STNScript.initSlick();
         STNScript.createMenuMobile();
+        STNScript.faqTree();
 
 
 

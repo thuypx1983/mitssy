@@ -1029,5 +1029,73 @@ body.views--products-list--page-1 .ajax-progress {
   background-color: #00beb4;
   border-radius: 0px;
   padding: 12px 24px; }
+.page-node-38 .field-name-field-module-bep .slick-prev, .page-node-38 .field-name-field-mau-bep .slick-prev {
+  left: 10px;
+  z-index: 2;
+  font-size: 20px; }
+.page-node-38 .field-name-field-module-bep .slick-next, .page-node-38 .field-name-field-mau-bep .slick-next {
+  z-index: 2;
+  right: 10px;
+  font-size: 20px; }
+.page-node-38 .field-name-field-module-bep .ui-tabs, .page-node-38 .field-name-field-mau-bep .ui-tabs {
+  border: none;
+  border-radius: 0px; }
+  .page-node-38 .field-name-field-module-bep .ui-tabs .ui-tabs-panel, .page-node-38 .field-name-field-mau-bep .ui-tabs .ui-tabs-panel {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px; }
+.page-node-38 .field-name-field-module-bep .ui-tabs .ui-tabs-nav, .page-node-38 .field-name-field-mau-bep .ui-tabs .ui-tabs-nav {
+  border-radius: 0px;
+  border: 0px; }
+.page-node-38 .field-name-field-module-bep .ui-tabs .ui-tabs-nav li, .page-node-38 .field-name-field-mau-bep .ui-tabs .ui-tabs-nav li {
+  border-radius: 0px;
+  border: none; }
+.page-node-38 .field-name-field-module-bep .ui-state-default a, .page-node-38 .field-name-field-module-bep .ui-state-default a:link, .page-node-38 .field-name-field-module-bep .ui-state-default a:visited, .page-node-38 .field-name-field-mau-bep .ui-state-default a, .page-node-38 .field-name-field-mau-bep .ui-state-default a:link, .page-node-38 .field-name-field-mau-bep .ui-state-default a:visited {
+  outline: none; }
+.page-node-38 .field-name-field-regular-faq .field-label {
+  display: block;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  font-size: 20px;
+  font-weight: normal; }
+.page-node-38 .field-name-field-regular-faq > .field-items {
+  background-color: #dfdfdf; }
+.page-node-38 .field-name-field-regular-faq .field-collection-container {
+  border: none;
+  margin: 0px; }
+.page-node-38 .field-name-field-regular-faq .field-collection-view {
+  border: none;
+  padding: 0px;
+  margin: 0px; }
+.page-node-38 .field-name-field-regular-faq .field-name-field-summary {
+  display: none;
+  background-color: #ffffff; }
+  .page-node-38 .field-name-field-regular-faq .field-name-field-summary.open {
+    display: block; }
+  .page-node-38 .field-name-field-regular-faq .field-name-field-summary .field-item {
+    border-bottom: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 45px; }
+.page-node-38 .field-name-field-regular-faq .field-name-field-faq .field-collection-item-field-faq > .content > .field-name-field-caption > .field-items > .field-item {
+  border-bottom: 1px solid #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px; }
+.page-node-38 .field-name-field-regular-faq .field-collection-item-field-regular-faq > .content > .field-name-field-caption > .field-items > .field-item {
+  border-bottom: 1px solid #ffffff;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px; }
+.page-node-38 .field-name-field-regular-faq .fa {
+  font-weight: normal;
+  padding: 5px;
+  display: inline-block;
+  background-color: #2e2e2e;
+  font-size: 10px;
+  color: #ffffff;
+  cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
