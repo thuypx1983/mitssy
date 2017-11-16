@@ -93,6 +93,13 @@
   }
 
   .field-name-field-module-bep,.field-name-field-mau-bep{
+    .field-label{
+      font-size: 24px;
+      text-align: center;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      font-weight: normal;
+    }
     .slick-prev{
       left: 10px;
       z-index: 2;

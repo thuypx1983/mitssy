@@ -1029,6 +1029,12 @@ body.views--products-list--page-1 .ajax-progress {
   background-color: #00beb4;
   border-radius: 0px;
   padding: 12px 24px; }
+.page-node-38 .field-name-field-module-bep .field-label, .page-node-38 .field-name-field-mau-bep .field-label {
+  font-size: 24px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: normal; }
 .page-node-38 .field-name-field-module-bep .slick-prev, .page-node-38 .field-name-field-mau-bep .slick-prev {
   left: 10px;
   z-index: 2;
