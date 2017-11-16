@@ -264,11 +264,11 @@ header .container-top {
   #navigation #main-menu > ul > li {
     display: inline-block;
     float: left;
-    color: #2b2b2b;
+    color: #000000;
     font-weight: 500;
     position: relative; }
     #navigation #main-menu > ul > li a {
-      color: #2b2b2b;
+      color: #000000;
       display: inline-block;
       font-weight: 500;
       padding-bottom: 17px;
@@ -278,6 +278,8 @@ header .container-top {
       text-decoration-color: currentcolor;
       text-decoration-line: none;
       text-decoration-style: solid; }
+    #navigation #main-menu > ul > li:hover a {
+      background-color: #f9f9f9; }
     #navigation #main-menu > ul > li:hover > ul {
       display: block; }
     #navigation #main-menu > ul > li > ul {
@@ -287,6 +289,9 @@ header .container-top {
       position: absolute;
       top: 100%;
       left: 0px; }
+      #navigation #main-menu > ul > li > ul > li a {
+        padding-bottom: 5px;
+        padding-top: 5px; }
     #navigation #main-menu > ul > li.mega > ul {
       width: 400px; }
       #navigation #main-menu > ul > li.mega > ul > li {
@@ -308,6 +313,8 @@ header .container-top {
     #navigation #main-menu > ul > li a {
       color: #ffffff;
       display: inline-block; }
+    #navigation #main-menu > ul > li:hover a {
+      background-color: transparent; }
     #navigation #main-menu > ul > li .fa {
       position: absolute;
       right: 5px;
