@@ -15,7 +15,7 @@ Drupal.behaviors.fieldCollectionTabs = {
   attach: function (context) {
 
     $('.field-collection-tabs', context)
-      .once('.tabs-processed')
+      .once('tabs')
       .tabs();
   }
 };

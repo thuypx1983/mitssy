@@ -1,0 +1,94 @@
+.page-node-38{
+  .kitchen_process {
+    width: 100%;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+
+  }
+  .kitchen_process .process_img {
+    float: left;
+    width: 14.28%;
+  }
+  .kitchen_process .process_img:nth-child(2n) {
+    padding-top: 5.5%;
+  }
+  .kitchen_process .process_img > .text {
+    white-space: nowrap;
+    text-align: center;
+    margin-left: -100%;
+    margin-right: -100%;
+    padding-top: 8px;
+  }
+
+
+  .kitchen_value {
+    margin-top: 36px;
+    width: 100%;
+    display: table;
+  }
+
+  .kitchen_value .value_block:nth-child(2n+1) {
+    clear: both;
+    border-right: 1px lightgrey solid;
+  }
+  .kitchen_value .value_block {
+    float: left;
+    width: 50%;
+    margin-bottom: 16px;
+  }
+
+  .kitchen_value .value_block .block_image {
+    display: block;
+    width: 30%;
+    padding-right: 36px;
+    padding-left: 36px;
+    float: left;
+    padding-bottom: 16px;
+  }
+
+  .kitchen_content {
+    margin-top: 16px;
+    text-align: center;
+    .content_button{
+      margin-top: 20px;
+    }
+  }
+  .kitchen_content .content_title h3 {
+    text-align: center;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+
+  .btn {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+  }
+  .kitchen_content .content_button > a {
+    display: inline-block;
+    color: white;
+    background-color: #00beb4;
+    border-radius: 0px;
+    padding: 12px 24px;
+  }
+}

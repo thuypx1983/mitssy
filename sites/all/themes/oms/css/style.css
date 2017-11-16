@@ -959,4 +959,75 @@ body.views--products-list--page-1 .ajax-progress {
     .page-node-32 #block-views-testimonials-block-1 .views-row .views-field-body .field-content:after, .page-node-32 #block-views-testimonials-block-1 .views-row .views-field-body .field-content:before {
       content: '"'; }
 
+.page-node-38 .kitchen_process {
+  width: 100%;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  display: table; }
+.page-node-38 .kitchen_process .process_img {
+  float: left;
+  width: 14.28%; }
+.page-node-38 .kitchen_process .process_img:nth-child(2n) {
+  padding-top: 5.5%; }
+.page-node-38 .kitchen_process .process_img > .text {
+  white-space: nowrap;
+  text-align: center;
+  margin-left: -100%;
+  margin-right: -100%;
+  padding-top: 8px; }
+.page-node-38 .kitchen_value {
+  margin-top: 36px;
+  width: 100%;
+  display: table; }
+.page-node-38 .kitchen_value .value_block:nth-child(2n+1) {
+  clear: both;
+  border-right: 1px lightgrey solid; }
+.page-node-38 .kitchen_value .value_block {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px; }
+.page-node-38 .kitchen_value .value_block .block_image {
+  display: block;
+  width: 30%;
+  padding-right: 36px;
+  padding-left: 36px;
+  float: left;
+  padding-bottom: 16px; }
+.page-node-38 .kitchen_content {
+  margin-top: 16px;
+  text-align: center; }
+  .page-node-38 .kitchen_content .content_button {
+    margin-top: 20px; }
+.page-node-38 .kitchen_content .content_title h3 {
+  text-align: center; }
+.page-node-38 .btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px; }
+.page-node-38 .btn {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
+.page-node-38 .kitchen_content .content_button > a {
+  display: inline-block;
+  color: white;
+  background-color: #00beb4;
+  border-radius: 0px;
+  padding: 12px 24px; }
+
 /*# sourceMappingURL=style.css.map */

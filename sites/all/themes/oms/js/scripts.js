@@ -40,6 +40,11 @@
                 arrows: true,
                 dots:true
             });
+            $('.field-name-field-mau-bep .field-name-field-images .field-items').slick({
+                autoplay: false,
+                arrows: true,
+                dots:false
+            });
 
             $('.view-id-projects.view-display-id-block_1 .view-content').slick({
                 autoplay: false,
